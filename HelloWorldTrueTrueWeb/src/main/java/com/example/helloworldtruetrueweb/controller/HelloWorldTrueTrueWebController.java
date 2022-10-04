@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HelloWorldTrueTrueWebController {
-
     @GetMapping("/")
     @ResponseBody
     String helloTrueWorld() {
@@ -22,7 +21,7 @@ public class HelloWorldTrueTrueWebController {
     @GetMapping("/users/HlazkovMaksym")
     @ResponseBody
     String hlazkovMaksym() {
-        return "My name is Hlazkov Maksym. I am a student of IP-05 group. I think i'm good at English, but not proficient enough.";
+        return "My name is Hlazkov Maksym. I am a student of IP-05 group. I think I'm not that bad at English, but I'm not proficient enough.";
     }
 
 }

@@ -3,9 +3,11 @@ package com.example.helloworld;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
 
+@Order(2)
 @SpringBootApplication
-//@Order(2)
 public class HelloWorldApplication implements CommandLineRunner {
 
     public static void main(String[] args) {
@@ -22,7 +24,7 @@ public class HelloWorldApplication implements CommandLineRunner {
 
 }
 
-/*@Component
+@Component
 @Order(1)
 class HelloWorldFirst implements CommandLineRunner {
     @Override
@@ -38,4 +40,4 @@ class HelloWorldSecond implements CommandLineRunner {
     public void run(String... args) throws Exception {
         System.out.println("Second... :(");
     }
-}*/
+}
